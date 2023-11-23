@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Nepal</title>
+  <link rel="icon" href="/images/android-chrome-192x192.png">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- font-family: 'Nunito', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Zilla Slab', serif;
+        font-family: 'Poppins', sans-serif; -->
+  <!--Swiper Slider-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="style/bootstrap.min.css">
+
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!--Custom Css-->
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-text: #616161;
+      --color-text-btn: #ffffff;
+      --card1-gradient-color1: #f12711;
+      --card1-gradient-color2: #f5af19;
+      --card2-gradient-color1: #7F00FF;
+      --card2-gradient-color2: #E100FF;
+      --card3-gradient-color1: #3f2b96;
+      --card3-gradient-color2: #a8c0ff;
+      --card4-gradient-color1: #11998e;
+      --card4-gradient-color2: #38ef7d;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #8e9eab, #eef2f3);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .card-wrap {
+      width: 220px;
+      background: #fff;
+      border-radius: 20px;
+      border: 5px solid #fff;
+      overflow: hidden;
+      color: var(--color-text);
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    }
+
+    .card-wrap:hover {
+      transform: scale(1.1);
+    }
+
+    .card-header {
+      height: 200px;
+      width: 100%;
+      background: red;
+      border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+      display: grid;
+      place-items: center;
+
+    }
+
+    .card-header i {
+      color: #fff;
+      font-size: 72px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .card-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+    }
+
+    .card-text {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card-btn {
+      border: none;
+      border-radius: 100px;
+      padding: 5px 30px;
+      color: #fff;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .card-header.one {
+      background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+    }
+
+    .card-header.two {
+      background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+    }
+
+    .card-header.three {
+      background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+    }
+
+    .card-header.four {
+      background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+    }
+
+    .card-btn.one {
+      background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+    }
+
+    .card-btn.two {
+      background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+    }
+
+    .card-btn.three {
+      background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+    }
+
+    .card-btn.four {
+      background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+    }
+  </style>
+</head>
+
+<body>
+  
+  
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">First heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading2">Second heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading3">Third heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p>...</p>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <p>...</p>
+  </div>
+
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!--Swiper CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="script/bootstrap.bundle.min.js"></script>
+
+  <!--custome js-->
+  <script src="script/script.js"></script>
+</body>
+
+
+
+
+</html>

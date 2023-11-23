@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package</title>
+    <link rel="icon" href="/images/android-chrome-192x192.png">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Nunito', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Zilla Slab', serif;
+        font-family: 'Poppins', sans-serif; -->
+
+    <!--Swiper Slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style/bootstrap.min.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--Animate on scroll-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Light box-->
+    <link rel="stylesheet" href="style/lightbox.css">
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-style">
+    <div class="singlepage relative">
+        <section class="header">
+            <div class="top-header">
+                <div class="master-container">
+                    <div class="nav mt-3 ">
+                        <div class="logo"><a href="index.html">
+                                <img src="images/png/Logo-2.png" alt="#" srcset=""></a>
+                        </div>
+                        <div class="nav-items">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <div class="hamburger" id="hamburger-1">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                            </label>
+                            <div class="menu-wrapped">
+                                <div class="menu">
+                                    <div class="upper-items">
+                                        <div class="top-btn"><a href="#">Plan A Trip!</a></div>
+                                        <div class="social-links">
+                                            <ul>
+                                                <li><a href="#"><img src="images/png/007-wechat.png" alt="#"></a></li>
+                                                <li><a href="#"><img src="designs/png/instagram.png" alt="#"></a></li>
+                                                <li><a href="#"><img src="images/png/005-viber.png" alt="#"></a></li>
+                                                <li>+922-81291812</li>
+                                            </ul>
+                                        </div>
+                                        <div class="trip-ad"> <img src="designs/png/trip-advisor.png" alt="#"></div>
+                                        <button class="search-btn" type="button"><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <div class="my-modal form">
+                                            <form action="#">
+                                                <div class="input">
+                                                    <label for="Keyword">Keyword:</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter a Keyword">
+                                                </div>
+                                                <div class="input">
+                                                    <label for="region">Region:</label>
+                                                    <select name="region" class="form-control">
+                                                        <option selected>Select a Region</option>
+                                                        <option value="Annapurna">Annapurna</option>
+                                                        <option value="Annapurna">Pokhara</option>
+                                                        <option value="Annapurna">Mustang</option>
+                                                        <option value="Annapurna">Kathmandu</option>
+                                                        <option value="Annapurna">Chitwan</option>
+                                                        <option value="Annapurna">Langtang</option>
+                                                        <option value="Annapurna">Others</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input">
+                                                    <label for="Activites">Activity:</label>
+                                                    <select name="region" class="form-control">
+                                                        <option selected>Select an Activity</option>
+                                                        <option value="Annapurna">Trekking</option>
+                                                        <option value="Annapurna">Tour</option>
+                                                        <option value="Annapurna">Luxury Travel</option>
+                                                        <option value="Annapurna">Paragliding</option>
+                                                        <option value="Annapurna">Rafting</option>
+                                                    </select>
+                                                </div>
+                                                <div class="d-if"><button class="close-modal search-btn"><i
+                                                            class="fa-solid fa-x"></i></button>
+                                                    <input type="submit" class="form-control my-btn"
+                                                        value="Search"></input>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <nav class="mt-3">
+                                        <div class="dropdown">
+                                            <button class="active"><a href="index.html">Home</a></button>
+                                            <div class="has-child" id="first-ul">
+                                                <button>Region</button>
+                                                <ul>
+                                                    <li><a href="region-collection.html" target="_blank">View All
+                                                            Regions</a></li>
+                                                    <li class="has-grandchild"><a href="region.html">Langtang Region</a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Helambu 5 Days Trek</a></li>
+                                                            <li><a href="page.html">Langtang Peek Trek</a></li>
+                                                            <li><a href="page.html">Langtang National Park Tour</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Everest Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Everest Summit</a></li>
+                                                            <li><a href="page.html">Everest Base Camp Trek</a></li>
+                                                            <li><a href="page.html">Chola Pass Trek</a></li>
+                                                            <li><a href="page.html"></a>Everest Family Ground Tour</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Chitwan Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Chitwan Cultural Tour</a></li>
+                                                            <li><a href="page.html">Chitwan Wild Life Exploration
+                                                                    Tour</a></li>
+                                                            <li><a href="page.html">Chitwan National Park Safari</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Pokhara Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Pokhara City Luxury Tour</a></li>
+                                                            <li><a href="page.html">Pokhara Hills Hike Trek</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html"> Annapurna
+                                                            Region</a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Annapurna Base Camp Trek</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="has-child">
+                                                <button>Activites</button>
+                                                <ul>
+                                                    <li><a href="#">Para Gliding</a></li>
+                                                    <li class="has-grandchild">Trekking and Hiking
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Chola Pass 4 Days Trek</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="page.html">Tour and Trip</a></li>
+                                                    <li><a href="page.html">Bungee Jump</a></li>
+                                                    <li><a href="page.html">Jungle Safari</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="has-child">
+                                                <button>Company</button>
+                                                <ul>
+                                                    <li><a href="#">Legal Documents</a></li>
+                                                    <li><a href="#">Collaboration</a></li>
+                                                </ul>
+                                            </div>
+                                            <button>Blog</button>
+                                            <div class="has-child">
+                                                <button>Contact Us</button>
+                                                <ul>
+                                                    <li><a href="#">Inquiry</a></li>
+                                                    <li><a href="#">Mail</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="display-seven display-ten">
+            <div class="region-banner">
+                <img src="designs/7481626.jpg" alt="">
+                <h2>Annapurna Base Camp Trek</h2>
+            </div>
+        </section>
+        <div class="small-screen-header">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#part-1">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-2">Highlights</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-3">Iterinary</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-4">Included</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-5">Excluded</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-6">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-7">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#part-8">Review</a></li>
+            </ul>
+        </div>
+        <section class="text-space-six p-sb" id="part-1">
+            <div class="master-container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="header-small mtb-2">
+                            <h3>Trip Facts:</h3>
+                            <h4>ABC Trek</h4>
+                        </div>
+                        <div class="stats-collection">
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <div class="text">
+                                            <h5>Duration</h5>
+                                            <span>21 Days</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-arrows-up-to-line"></i>
+                                        <div class="text">
+                                            <h5>Altitude</h5>
+                                            <span>4000 m</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div class="text">
+                                            <h5>Accomodation</h5>
+                                            <span>Hotel</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-hotel"></i>
+                                        <div class="text">
+                                            <h5>Location</h5>
+                                            <span>Pokhara</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-utensils"></i>
+                                        <div class="text">
+                                            <h5>Meal</h5>
+                                            <span>Lunch/Dinner</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <div class="text">
+                                            <h5>Weather</h5>
+                                            <span>Extreme Cold</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-plane-arrival"></i>
+                                        <div class="text">
+                                            <h5>Arrival:</h5>
+                                            <span>Kathmandu</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <div class="text">
+                                            <h5>Departure</h5>
+                                            <span>Pokhara</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="top">
+                                        <i class="fa-solid fa-person-hiking"></i>
+                                        <div class="text">
+                                            <h5>Difficulty</h5>
+                                            <span>Moderate</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-collection relative ">
+                            <img src="designs/7481523.jpg" alt="">
+                            <img src="designs/7481584.jpg" alt="">
+                            <img src="designs/166127.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="display-eleven">
+            <div class="master-container">
+                <div class="row pb-6">
+                    <div class="col-md-4" id="navbar-style">
+                        <div class="sticky-box">
+                            <div class="side-three ">
+                                <ul>
+                                    <li class="nav-item"><a class="nav-link" href="#part-1">Overview</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-2">Highlights</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-3">Iterinary</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-4">Included</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-5">Excluded</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-6">FAQ</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-7">Gallery</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#part-8">Review</a></li>
+                                </ul>
+                            </div>
+                            <div class="side-four">
+                                <a href="#">
+                                    <div class="my-btn">Enquiry</div>
+                                </a>
+                                <button class="my-btn" id="btn-action-1">Show Booking Discount</button>
+                                <div class="table hidden">
+
+                                    <table>
+                                        <tr>
+                                            <th>Pax:</th>
+                                            <th>Off By:</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>30%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="side-two">
+                                    <i class="fa-solid fa-arrow-trend-up"></i><span>230 Shares</span>
+                                    <a href="#"><img src="images/png/twitter.png" alt=""></a>
+                                    <a href="#"><img src="images/png/instagram.png" alt=""></a>
+                                    <a href="#"><img src="images/png/005-viber.png" alt=""></a>
+                                    <a href="#"><img src="images/png/006-facebook.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="side-one animate-side-one">
+                                <img src="images/png/hiker-blue.png" alt="#">
+                                <h5>Annam Shrestha</h5>
+                                <h6>Your Guide for the Region</h6>
+                            </div>
+
+                            <h4 class="side-header">Similar Packages Offered:</h4>
+                            <div class="small-card">
+                                <a href="#">
+                                    <img src="designs/166015.jpg" alt="">
+                                    <div class="texts">
+                                        <h5>Ghale Gaun Trek</h5>
+                                        <ul>
+                                            <li>Price From: <span>Rs.1200</span></li>
+                                            <li>Seats availabe: <span> 2 or above</span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="#">
+                                    <img src="designs/7481573.jpg" alt="">
+                                    <div class="texts">
+                                        <h5>Annapurna Family Tour</h5>
+                                        <ul>
+                                            <li>Price From: <span>Rs.2200</span></li>
+                                            <li>Seats availabe: <span> 2 or above</span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small-card">
+                                <a href="#">
+                                    <img src="designs/trekking.jpg" alt="">
+                                    <div class="texts">
+                                        <h5>Gokarna Trek</h5>
+                                        <ul>
+                                            <li>Price From: <span>Rs.2200</span></li>
+                                            <li>Seats availabe: <span> 2 or above</span></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8" data-bs-spy="scroll" data-bs-target="#navbar-style">
+                        <div class="text-space-eleven" id="part-1">
+                            <div class="header-small mtb-2">
+                                <h3>Overview:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <p>The Annapurna Base Camp, nestled in the heart of the breathtaking Annapurna Himalayas, is
+                                a
+                                destination that beckons adventurers and nature enthusiasts alike. Trekking to this
+                                iconic
+                                base
+                                camp is an unforgettable journey through lush rhododendron forests, charming Gurung and
+                                Magar
+                                villages, and rugged mountain terrain. As you ascend, the snow-capped peaks of Annapurna
+                                and
+                                Machapuchare gradually come into view, creating a mesmerizing backdrop to your trek.At
+                                the
+                                base
+                                camp itself, you'll find a serene amphitheater of towering peaks, including Annapurna I,
+                                the
+                                world's 10th highest mountain. The sense of accomplishment and the sheer natural beauty
+                                make
+                                the
+                                Annapurna Base Camp a bucket-list destination for those seeking both adventure and
+                                tranquility
+                                in the heart of the Himalayas.
+                                At night, the skies above the Annapurna Base Camp reveal a dazzling display of stars,
+                                far
+                                removed from the city lights. The moonlight often casts an ethereal glow on the
+                                surrounding
+                                peaks, creating a surreal atmosphere that's perfect for stargazing and reflection.
+
+                                The final stretch of the trek involves a challenging ascent, but the reward is beyond
+                                words.
+                                When you reach the Annapurna Base Camp itself, you're surrounded by an amphitheater of
+                                towering
+                                peaks, including Annapurna South and Hiunchuli. The sunrises here are nothing short of
+                                magical,
+                                with the first rays of light illuminating the snow-covered giants, turning them shades
+                                of
+                                pink
+                                and gold. This experience, coupled with the camaraderie of fellow trekkers and the deep
+                                sense of
+                                accomplishment, makes the journey to Annapurna Base Camp an unforgettable adventure in
+                                the
+                                heart
+                                of Nepal's Himalayas.
+                            </p>
+                        </div>
+                        <div class="text-space-eleven pt-5" id="part-2">
+                            <div class="header-small mtb-2">
+                                <h3>Trip Highlights:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Spectacular Mountain Views: One of the primary highlights of the ABC trek is the
+                                        awe-inspiring panoramic views of the Annapurna Massif, including Annapurna I,
+                                        Annapurna
+                                        South, Machapuchare (Fishtail), and Hiunchuli.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Cultural Immersion: Experience the rich culture of the Gurung and Magar ethnic
+                                        communities as you pass through charming villages along the trail.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Lush Rhododendron Forests: Trek through lush rhododendron forests, especially
+                                        vibrant
+                                        during the spring when these colorful flowers are in full bloom.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Natural Hot Springs: After days of trekking, soothe your muscles in the natural
+                                        hot
+                                        springs of Jhinu Danda. It's a perfect way to relax and rejuvenate amidst
+                                        stunning
+                                        mountain scenery.
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <p>
+                                        Majestic Modi Khola Gorge: The trail takes you alongside the roaring Modi Khola
+                                        River,
+                                        which flows through a dramatic gorge.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Charming Teahouse Accommodations: Stay in cozy teahouses along the route, where
+                                        you
+                                        can
+                                        savor warm meals and beverages, swap stories with fellow trekkers, and enjoy the
+                                        hospitality of local hosts.
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Sunrise at Annapurna Base Camp: Witness a magical sunrise at Annapurna Base
+                                        Camp,
+                                        where
+                                        the first rays of sunlight illuminate the peaks, turning them into a golden
+                                        spectacle.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Varied Terrain: The trek offers diverse landscapes, from terraced fields and
+                                        forests
+                                        in
+                                        the lower regions to alpine meadows and glaciers as you ascend higher.
+                                </li>
+
+                                </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-space-twelve pt-5" id="part-3">
+                            <div class="header-small mtb-2">
+                                <h3>Trip Iterinary:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <div class="row iterinary">
+                                <div class="col-md-2">
+
+                                    <h6>Day <span>1</span></h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Arrival At Kathmandu</h5>
+                                        <button id="1"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+                                    <p id="p-1" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>2</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>City Tour </h5>
+                                        <button id="2"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+                                    <p id="p-2" class="hidden">Journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>3</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Orientation</h5>
+                                        <button id="3"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-3" class="hidden">We'll find a serene amphitheater of towering peaks,
+                                        including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>4</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Flight to Pokhara</h5>
+                                        <button id="4"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-4" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>5</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Private Ride to Annapurna</h5>
+                                        <button id="5"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-5" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>5</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Grouping and Orientation</h5>
+                                        <button id="4"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-5" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>6</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Preparation for the hike</h5>
+                                        <button id="6"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+                                    <p id="p-6" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>7</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Trek to Base Camp</h5>
+                                        <button id="7"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-7" class="hidden">Snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>8</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Ascending the Annapruna</h5>
+                                        <button id="8"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-8" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>9</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Return to the Base Camp</h5>
+                                        <button id="9"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-9" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>10</span></h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Rest and Recover in Pokhara</h5>
+                                        <button id="10"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-10" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>11</span></h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Back To Kathmandu</h5>
+                                        <button id="11"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-11" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Day <span>12</span> </h6>
+                                </div>
+                                <div class="col-md-10 iterinary-detail">
+                                    <div class="d-if">
+                                        <h5>Departure</h5>
+                                        <button id="12"><i class="fa-solid fa-chevron-down"></i></button>
+                                    </div>
+
+                                    <p id="p-12" class="hidden">Trekking to this iconic base camp is an unforgettable
+                                        journey through lush
+                                        rhododendron forests, charming Gurung and Magar villages, and rugged mountain
+                                        terrain. As you ascend, the snow-capped peaks of Annapurna and Machapuchare
+                                        gradually come into view, creating a mesmerizing backdrop to your trek.At the
+                                        base
+                                        camp itself, you'll find a serene amphitheater of towering peaks, including
+                                        Annapurna</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-space-thirteen pt-5" id="part-4">
+                            <div class="header-small mtb-2">
+                                <h3>Included:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>Top Accomodation</p>
+                                </li>
+                                <li>
+                                    <p>First Aid and Medical Assistance</p>
+                                </li>
+                                <li>
+                                    <p>Personal attention and counselling</p>
+                                </li>
+                                <li>
+                                    <p>Gear and Tools Assistance</p>
+                                </li>
+                                <li>
+                                    <p>Private modes of transportation</p>
+                                </li>
+                                <li>
+                                    <p>Local traditional Cuisines</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-space-fourteen pt-5" id="part-5">
+                            <div class="header-small  mtb-2">
+                                <h3>Excluded:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>Alcoholic Accomodation</p>
+                                </li>
+                                <li>
+                                    <p>Visa fee Coverage</p>
+                                </li>
+                                <li>
+                                    <p>Extra Personal fee Charges</p>
+                                </li>
+                                <li>
+                                    <p>Heavy weight for potters</p>
+                                </li>
+                                <li>
+                                    <p>Ciggarttes</p>
+                                </li>
+                                <li>
+                                    <p>Personal Food</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-space-twelve pt-5" id="part-6">
+                            <div class="header-small  mtb-2">
+                                <h3>Frequently Asked Questions:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <div class="accordion" id="faq">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne">How do we navigate the mountains?</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                        <div class="accordion-body">
+                                            We have Numerious experienced guides and mountaineers who will guide you
+                                            throughtout yoru journey and travel.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo">Will our Visa fees
+                                            be covered?</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#faq">
+                                        <div class="accordion-body">
+                                            Sorry, We do not cover up international expenses of our customer.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree">What is the meal
+                                            plan?</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                        <div class="accordion-body">
+                                            Local traditional Cuisines.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour">How will we
+                                            travel?</button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                        <div class="accordion-body">
+                                            Private vehicle and Trekking on foot.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button type="button" class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive">What is the total
+                                            cost of Visa?</button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                        <div class="accordion-body">
+                                            $299 For per person.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="display-fifteen pt-5" id="part-7">
+                            <div class="header-small mtb-2">
+                                <h3>Gallery:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <div id="animated-thumbnails">
+                                <a href="designs/166127.jpg" data-lightbox="models" title="Mountain">
+                                    <img src="designs/166127.jpg" alt="">
+                                </a>
+                                <a href="designs/4401306.jpg" data-lightbox="models" title="Mountain">
+                                    <img src="designs/4401306.jpg" alt="">
+                                </a>
+                                <a href="designs/tour.jpg" data-lightbox="models" title="Mountain">
+                                    <img src="designs/tour.jpg" alt="">
+                                </a>
+                                <a href="designs/7481644.jpg" data-lightbox="models" title="Mountain"><img
+                                        src="designs/7481644.jpg" alt="#"></a>
+                                <a href="designs/7481584.jpg" data-lightbox="models" title="Mountain"><img
+                                        src="designs/7481584.jpg" alt="#"></a>
+                                <a href="designs/trekking.jpg" data-lightbox="models" title="Mountain"><img
+                                        src="designs/trekking.jpg" alt="#"></a>
+
+                            </div>
+                        </div>
+                        <div class="display-fifteen pt-5" id="part-8">
+                            <div class="header-small mtb-2">
+                                <h3>Recent Reviews:</h3>
+                                <h4>ABC Trek</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="my-card-6">
+                                        <p>
+                                            "Loved the experience and hospitality provided my Adventure Nepal, ABC was
+                                            one of my bucket list places, I thank your team for guiding me".
+                                        </p>
+                                        <div class="d-if relative">
+                                            <div class="arrow"></div>
+                                            <img src="designs/People/profile-2.jpg" alt="">
+                                            <h6>Adam Brayan</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="my-card-6">
+                                        <p>
+                                            "ABC was one of my bucket list places, Loved the experience and hospitality
+                                            provided my Adventure Nepal, I thank your team for guiding me. I also
+                                            suggest everyone to try their other packages".
+                                        </p>
+                                        <div class="d-if relative">
+                                            <div class="arrow"></div>
+                                            <img src="designs/People/profile-3.jpg" alt="">
+                                            <h6>Jake paul</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="my-card-6">
+                                        <p>
+                                            "I thank your team for guiding me.Loved the experience and hospitality
+                                            provided my Adventure Nepal, ABC was one of my bucket list places, I thank
+                                            your team for guiding me".
+                                        </p>
+                                        <div class="d-if relative">
+                                            <div class="arrow"></div>
+                                            <img src="designs/People/profile-4.jpg" alt="">
+                                            <h6>Tina Queen</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="footer p-sb">
+            <div class="master-container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Fixed Departures</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Plan a trip</a></li>
+                            <li><a href="#">Popular Packages</a></li>
+
+                            <li><a href="#">Summary</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h4>Regions</h4>
+                        <ul>
+                            <li><a href="#">Annapurna</a></li>
+                            <li><a href="#">Langtang</a></li>
+                            <li><a href="#">Everest</a></li>
+                            <li><a href="#">Kathmandu</a></li>
+                            <li><a href="#">Pokhara</a></li>
+                            <li><a href="#">Mustang</a></li>
+                            <li><a href="#">Chitwan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h4>Activites</h4>
+                        <ul>
+                            <li><a href="#">Trekking</a></li>
+                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">Luxury Travel</a></li>
+                            <li><a href="#">Paragliding</a></li>
+                            <li><a href="#">Rafting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Legal Documents</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <h4>facebook</h4>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                            width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <h3>Stay Connected with Us</h3>
+                        <ul class="nav social-links">
+                            <li><a href="#"><img src="images/png/006-facebook.png" alt="#"></a></li>
+                            <li><a href="#"><img src="images/png/instagram.png" alt="#"></a></li>
+                            <li><a href="#"><img src="images/png/twitter.png" alt="#"></a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i><a href="#">AdvenNep@gmail.com</a></li>
+                            <li><i class="fa-solid fa-envelope"></i> <a href="#">infoadvennepal@advennep.com</a></li>
+                            <li><i class="fa-solid fa-phone"></i><a href="#">+980-8927981</a></li>
+                            <li><i class="fa-solid fa-phone"></i><a href="#">+980-8231231</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i><a href="#">Kathmandu, Nepal</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <h3>About Us</h3>
+                        <p>We are one of the leading Travel and Tourism managerment company of nepal. We want to cater
+                            people
+                            who want to explore the wilderness of nepal.
+                        </p>
+                        <span><a href="#">View more</a></span>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <h3>Recommended On:</h3>
+                        <div class="img"><a href="#">
+                                <img src="images/png/004-tripadvisor.png" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="site-footer">
+            <div class="master-container">
+                <div class="row">
+                    <div class="col-lg-3"><img src="designs/png/Logo-2.png" alt=""></div>
+                    <div class="col-lg-9"><span>@2023 Adventure Nepal. All Rights Reserved. Developed and Maintained by:
+                            <a href="#">Iceberg Technology</a></span></div>
+                </div>
+            </div>
+        </section>
+        <div class="to-top-btn"><a href="#"><i class="fa-solid fa-angles-up"></i></a></div>
+    </div>
+
+
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--lightbox-->
+
+    <script src="script/lightbox-plus-jquery.js">
+    </script>
+    <!--Swiper CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <!--waypoints jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+    <!--custome js-->
+    <script src="script/script.js"></script>
+</body>
+
+</html>

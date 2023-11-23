@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokhara Region</title>
+    <link rel="icon" href="/images/android-chrome-192x192.png">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Nunito', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Zilla Slab', serif;
+        font-family: 'Poppins', sans-serif; -->
+
+    <!--Swiper Slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style/bootstrap.min.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--Animate on scroll-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="region-page">
+        <section class="header">
+            <div class="top-header">
+                <div class="master-container">
+                    <div class="nav mt-3 ">
+                        <div class="logo"><a href="index.html">
+                                <img src="images/png/Logo-2.png" alt="#" srcset=""></a>
+                        </div>
+                        <div class="nav-items">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <div class="hamburger" id="hamburger-1">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                            </label>
+                            <div class="menu-wrapped">
+                                <div class="menu">
+                                    <div class="upper-items">
+                                        <div class="top-btn"><a href="#">Plan A Trip!</a></div>
+                                        <div class="social-links">
+                                            <ul>
+                                                <li><a href="#"><img src="images/png/007-wechat.png" alt="#"></a></li>
+                                                <li><a href="#"><img src="designs/png/instagram.png" alt="#"></a></li>
+                                                <li><a href="#"><img src="images/png/005-viber.png" alt="#"></a></li>
+                                                <li>+922-81291812</li>
+                                            </ul>
+                                        </div>
+                                        <div class="trip-ad"> <img src="designs/png/trip-advisor.png" alt="#"></div>
+                                        <button class="search-btn" type="button"><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <div class="my-modal form">
+                                            <form action="#">
+                                                <div class="input">
+                                                    <label for="Keyword">Keyword:</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter a Keyword">
+                                                </div>
+                                                <div class="input">
+                                                    <label for="region">Region:</label>
+                                                    <select name="region" class="form-control">
+                                                        <option selected>Select a Region</option>
+                                                        <option value="Annapurna">Annapurna</option>
+                                                        <option value="Annapurna">Pokhara</option>
+                                                        <option value="Annapurna">Mustang</option>
+                                                        <option value="Annapurna">Kathmandu</option>
+                                                        <option value="Annapurna">Chitwan</option>
+                                                        <option value="Annapurna">Langtang</option>
+                                                        <option value="Annapurna">Others</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input">
+                                                    <label for="Activites">Activity:</label>
+                                                    <select name="region" class="form-control">
+                                                        <option selected>Select an Activity</option>
+                                                        <option value="Annapurna">Trekking</option>
+                                                        <option value="Annapurna">Tour</option>
+                                                        <option value="Annapurna">Luxury Travel</option>
+                                                        <option value="Annapurna">Paragliding</option>
+                                                        <option value="Annapurna">Rafting</option>
+                                                    </select>
+                                                </div>
+                                                <div class="d-if"><button class="close-modal search-btn"><i
+                                                            class="fa-solid fa-x"></i></button>
+                                                    <input type="submit" class="form-control my-btn"
+                                                        value="Search"></input>
+                                                </div>
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <nav class="mt-3">
+                                        <div class="dropdown">
+                                            <button class="active"><a href="index.html">Home</a></button>
+                                            <div class="has-child" id="first-ul">
+                                                <button>Region</button>
+                                                <ul>
+                                                    <li><a href="region-collection.html" target="_blank">View All
+                                                            Regions</a></li>
+                                                    <li class="has-grandchild"><a href="region.html">Langtang Region</a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Helambu 5 Days Trek</a></li>
+                                                            <li><a href="page.html">Langtang Peek Trek</a></li>
+                                                            <li><a href="page.html">Langtang National Park Tour</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Everest Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Everest Summit</a></li>
+                                                            <li><a href="page.html">Everest Base Camp Trek</a></li>
+                                                            <li><a href="page.html">Chola Pass Trek</a></li>
+                                                            <li><a href="page.html"></a>Everest Family Ground Tour</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Chitwan Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Chitwan Cultural Tour</a></li>
+                                                            <li><a href="page.html">Chitwan Wild Life Exploration
+                                                                    Tour</a></li>
+                                                            <li><a href="page.html">Chitwan National Park Safari</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html">Pokhara Region </a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Pokhara City Luxury Tour</a></li>
+                                                            <li><a href="page.html">Pokhara Hills Hike Trek</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-grandchild"><a href="region.html"> Annapurna
+                                                            Region</a>
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Annapurna Base Camp Trek</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="has-child">
+                                                <button>Activites</button>
+                                                <ul>
+                                                    <li><a href="#">Para Gliding</a></li>
+                                                    <li class="has-grandchild">Trekking and Hiking
+                                                        <ul class="grandchild">
+                                                            <li><a href="page.html">Chola Pass 4 Days Trek</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="page.html">Tour and Trip</a></li>
+                                                    <li><a href="page.html">Bungee Jump</a></li>
+                                                    <li><a href="page.html">Jungle Safari</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="has-child">
+                                                <button>Company</button>
+                                                <ul>
+                                                    <li><a href="#">Legal Documents</a></li>
+                                                    <li><a href="#">Collaboration</a></li>
+                                                </ul>
+                                            </div>
+                                            <button>Blog</button>
+                                            <div class="has-child">
+                                                <button>Contact Us</button>
+                                                <ul>
+                                                    <li><a href="#">Inquiry</a></li>
+                                                    <li><a href="#">Mail</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="display-seven">
+            <div class="region-banner">
+                <img src="designs/4401237.jpg" alt="">
+                <h2>Pokhara</h2>
+            </div>
+        </section>
+        <section class="text-space-six p-sb region-display-one">
+            <div class="master-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="header-small">
+                            <h3>Introduction:</h3>
+                            <h4>The City beneath the mountains</h4>
+                        </div>
+                        <p>For the adventurous souls, Pokhara offers a gateway to thrilling experiences. Paraglide over
+                            the
+                            city for
+                            a bird's-eye view of the landscape, or set out on a trek to viewpoints that offer panoramic
+                            vistas of
+                            the Himalayan giants. The nearby Sarangkot Hill is a popular spot to witness the sunrise
+                            painting the
+                            mountains in hues of gold. Pokhara also offers a cultural tapestry with its blend of local
+                            traditions
+                            and international influences. Explore ancient temples and monasteries, or simply enjoy the
+                            vibrant arts
+                            and crafts scene that colors the city's streets.
+                            The nearby Sarangkot Hill is a popular spot to witness the sunrise painting the
+                            mountains in hues of gold. Pokhara also offers a cultural tapestry with its blend of local
+                            traditions
+                            and international influences. Explore ancient temples and monasteries, or simply enjoy the
+                            vibrant arts
+                            and crafts scene that colors the city's streets.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-collection relative animate-img-collection">
+                            <img src="designs/123124124.png" alt="">
+                            <img src="designs/7481523.jpg" alt="">
+                            <img src="designs/2143386.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section class="display-four">
+            <div class="master-container">
+                <div class="section-title">
+                    <div class="headers">
+                        <div class="relative">
+                            <h3>Our Packages</h3>
+                            <h2>Our Packages</h2>
+                        </div>
+                        <h4>Meticulously crafted packages</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/166015.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Ghale Gaun Trek</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>8 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Moderate</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>2300</span>
+                                        </div>
+                                        <div class="my-btn"> View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/trekking.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Machhi Himal Trek</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>4 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Rainy/ Thunderstrom</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 4300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/tour.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Out Valley Tour</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>8 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-compass-drafting"></i><span>Snow/ Cold</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/3480085.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Kriti Temple Tour</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>2 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Snow/ Cold</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/4401313.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>High Himali Trek</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>11 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Sunny/ Cold</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 7300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/rafting.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Rafting</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>3 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Sunny</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/166023.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Upper Tse Himal Trek</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>8 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Moist Hot</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="my-card-5">
+                            <a href="page.html">
+                                <div class="img">
+                                    <img src="designs/145.jpg" alt="#">
+                                </div>
+                                <div class="texts">
+                                    <h4>Pokhara Wildlife tour</h4>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar-days"></i><span>8 Days</span></li>
+                                        <li><i class="fa-solid fa-person-hiking"></i><span>2 or Above</span></li>
+                                        <li><i class="fa-solid fa-cloud"></i><span>Humid</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2300</span>
+                                        </div>
+                                        <div class="my-btn">View More</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="display-three p-sb relative display-nine">
+        <div class="master-container">
+            <div class="section-title">
+                <div class="headers">
+                    <div class="relative">
+                        <h3>Fixed Departures</h3>
+                        <h2>Fixed Departures</h2>
+                    </div>
+                    <h4>Book your next trips:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>Everest Base Camp Trek</h4>
+                            <div class="body">
+                                <img src="designs/166127.jpg" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Solukhumbu</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/02/12</span></li>
+                                        <li>Departure : <span>2023/02/24</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 2 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 4000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>Lumbini Tour</h4>
+                            <div class="body">
+                                <img src="designs/12412.png" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Lumbini</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/01/04</span></li>
+                                        <li>Departure : <span>2023/01/09</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 10 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 2800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>ABC Trek</h4>
+                            <div class="body">
+                                <img src="designs/7481523.jpg" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Annapurna</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/03/12</span></li>
+                                        <li>Departure : <span>2023/03/04</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 3 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 3400</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>Ilam Tour</h4>
+                            <div class="body">
+                                <img src="designs/12312312.png" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Others</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/03/23</span></li>
+                                        <li>Departure : <span>2023/03/31</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 4 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 3100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>Melamchi Low River Rafting</h4>
+                            <div class="body">
+                                <img src="designs/rafting.jpg" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Others</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/02/12</span></li>
+                                        <li>Departure : <span>2023/02/24</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 2 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 3000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="my-card-4"> <a href="page.html">
+                            <h4>Machhi Gaun Trek</h4>
+                            <div class="body">
+                                <img src="designs/166015.jpg" alt="">
+                                <div class="others">
+                                    <ul>
+                                        <li>To : <span>Annapurna</span></li>
+                                        <li>From : <span>Kathmandu</span></li>
+                                        <li>Arrival : <span>2023/03/31</span></li>
+                                        <li>Departure : <span>2023/04/14</span></li>
+                                    </ul>
+                                    <div class="info">
+                                        <div class="info-left">
+                                            <Span>Space Available: 13 pax</Span>
+                                        </div>
+                                        <div class="power-word">
+                                            <span>Price From</span>
+                                            <span>Rs 4800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer p-sb">
+        <div class="master-container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Fixed Departures</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Plan a trip</a></li>
+                        <li><a href="#">Ring a call</a></li>
+                        <li><a href="#">Popular Packages</a></li>
+                        
+                        <li><a href="#">Summary</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4>Regions</h4>
+                    <ul>
+                        <li><a href="#">Annapurna</a></li>
+                        <li><a href="#">Langtang</a></li>
+                        <li><a href="#">Everest</a></li>
+                        <li><a href="#">Kathmandu</a></li>
+                        <li><a href="#">Pokhara</a></li>
+                        <li><a href="#">Mustang</a></li>
+                        <li><a href="#">Chitwan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4>Activites</h4>
+                    <ul>
+                        <li><a href="#">Trekking</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Luxury Travel</a></li>
+                        <li><a href="#">Paragliding</a></li>
+                        <li><a href="#">Rafting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Legal Documents</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>facebook</h4>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                        width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Stay Connected with Us</h3>
+                    <ul class="nav social-links">
+                        <li><a href="#"><img src="images/png/006-facebook.png" alt="#"></a></li>
+                        <li><a href="#"><img src="images/png/instagram.png" alt="#"></a></li>
+                        <li><a href="#"><img src="images/png/twitter.png" alt="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i><a href="#">AdvenNep@gmail.com</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="#">infoadvennepal@advennep.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="#">+980-8927981</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="#">+980-8231231</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="#">Kathmandu, Nepal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <h3>About Us</h3>
+                    <p>We are one of the leading Travel and Tourism managerment company of nepal. We want to cater
+                        people
+                        who want to explore the wilderness of nepal.
+                    </p>
+                    <span><a href="#">View more</a></span>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h3>Recommended On:</h3>
+                    <div class="img"><a href="#">
+                            <img src="images/png/004-tripadvisor.png" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-footer">
+        <div class="master-container">
+            <div class="row">
+                <div class="col-lg-3"><img src="designs/png/Logo-2.png" alt=""></div>
+                <div class="col-lg-9"><span>@2023 Adventure Nepal. All Rights Reserved. Developed and Maintained by:
+                        <a href="#">Iceberg Technology</a></span></div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!--Swiper CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <!--waypoints jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!--custome js-->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
