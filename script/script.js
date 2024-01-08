@@ -1,3 +1,4 @@
+//Code block contains jquery and js
 $(document).ready(function () {
   $(document).ready(function () {
     $(".hamburger").click(function () {
